@@ -1,0 +1,389 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>[Raffaele] | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav id="navbar">
+    <div class="nav-logo">[<span>Raffaele</span>@sec]<span style="color:var(--green)">~#</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">Chi sono</a></li>
+      <li><a href="#skills">Skill</a></li>
+      <li><a href="#certifications">Cert</a></li>
+      <li><a href="#projects">Progetti</a></li>
+      <li><a href="#contact">Contatti</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-tag">// PASSIONATE ABOUT INFORMATION TECHNOLOGY</p>
+      <h1 class="hero-name">Ciao, sono <span class="accent">Raffaele Sbetta</span></h1>
+      <div class="hero-role">
+        <span id="typewriter"></span><span class="cursor"></span>
+      </div>
+      <p class="hero-tagline">
+        Trovo soddisfazione nel comprendere a fondo i sistemi informatici, scoprire le loro vulnerabilità e 
+        imparare continuamente nuove tecniche offensive per migliorare le difese.
+      </p>
+      <div class="hero-btns">
+        <a href="https://linkedin.com/in/[IL-TUO-PROFILO]" target="_blank" rel="noopener" class="btn">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/[IL-TUO-PROFILO]" target="_blank" rel="noopener" class="btn">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://tryhackme.com/p/[IL-TUO-PROFILO]" target="_blank" rel="noopener" class="btn">
+          <i class="fas fa-terminal"></i> HackTheBox
+        </a>
+        <a href="#contact" class="btn btn-solid">
+          <i class="fas fa-paper-plane"></i> Contattami
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about">
+    <div class="container">
+      <p class="section-label reveal">// 01. whoami</p>
+      <h2 class="section-title reveal">Chi sono</h2>
+      <div class="section-line reveal"></div>
+      <div class="about-grid">
+        <div class="about-photo reveal">
+          <i class="fas fa-user-secret"></i>
+          <span>[ FOTO.jpg ]</span>
+        </div>
+        <div class="about-text reveal">
+          <h3 class="prompt">bio.txt</h3>
+          <p>
+            Appassionato di cybersecurity con focus su penetration testing. Mi piace esplorare i sistemi informatici, mettendo alla prova 
+            le mie capacità. Sono sempre alla ricerca di nuove sfide e opportunità per crescere in questo campo dinamico.
+          </p>
+          <p>
+            Oltre alla cybersecurity mi interesso a tutto il mondo inforatico, dalla programmazione alla gestione dei sistemi. 
+            Credo che la curiosità e la voglia di imparare siano le chiavi per diventare un professionista completo.
+          </p>
+          <div class="about-tags">
+            <span class="tag">Penetration Testing</span>
+            <span class="tag">Red Team</span>
+            <span class="tag">Linux</span>
+            <span class="tag">Networking</span>
+            <span class="tag">CTF Player</span>
+            <span class="tag">[ALTRO TAG]</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section id="skills">
+    <div class="container">
+      <p class="section-label reveal">// 02. skills --list</p>
+      <h2 class="section-title reveal">Competenze</h2>
+      <div class="section-line reveal"></div>
+      <div class="skills-grid">
+
+        <div class="skill-card reveal">
+          <div class="skill-card-icon"><i class="fas fa-network-wired"></i></div>
+          <h3>Networking</h3>
+          <div class="skill-bar-list">
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>TCP/IP &amp; Protocolli</span><span>85%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>Wireshark / Tcpdump</span><span>75%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>Nmap / Recon</span><span>90%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-icon"><i class="fas fa-bug"></i></div>
+          <h3>Penetration Testing</h3>
+          <div class="skill-bar-list">
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>Metasploit</span><span>80%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>Privilege Escalation</span><span>78%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="78"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>Post Exploitation</span><span>60%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="60"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-icon"><i class="fas fa-globe"></i></div>
+          <h3>Web Security</h3>
+          <div class="skill-bar-list">
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>OWASP Top 10</span><span>82%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="82"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>Burp Suite</span><span>75%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>SQLi / XSS / LFI</span><span>77%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="77"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-icon"><i class="fas fa-terminal"></i></div>
+          <h3>Strumenti &amp; OS</h3>
+          <div class="skill-bar-list">
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>Kali Linux</span><span>88%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>Bash / Python</span><span>72%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="72"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header"><span>Windows AD</span><span>60%</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="60"></div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CERTIFICATIONS ===================== -->
+  <section id="certifications">
+    <div class="container">
+      <p class="section-label reveal">// 03. ls certs/</p>
+      <h2 class="section-title reveal">Certificazioni</h2>
+      <div class="section-line reveal"></div>
+      <div class="certs-grid">
+
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fas fa-shield-halved"></i></div>
+          <div class="cert-info">
+            <h4>JUNIOR PENETRATION TESTER</h4>
+            <span>INE</span>
+            <span class="cert-year">2026</span>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+          <div class="cert-info">
+            <h4>CEH-V13 AI CERTIFIED ETHICAL HACKER</h4>
+            <span>EC-Council</span>
+            <span class="cert-year">2025</span>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fas fa-award"></i></div>
+          <div class="cert-info">
+            <h4>GOOGLE IT SUPPORT PROFESSIONAL CERTIFICATE</h4>
+            <span>Google</span>
+            <span class="cert-year">2024</span>
+          </div>
+        </div>
+
+        <!--<div class="cert-card reveal">
+          <div class="cert-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="cert-info">
+            <h4>[CERTIFICAZIONE 4]</h4>
+            <span>[ENTE CERTIFICATORE]</span>
+            <span class="cert-year">[ANNO]</span>
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS / CTF ===================== -->
+  <section id="projects">
+    <div class="container">
+      <p class="section-label reveal">// 04. cat writeups.log</p>
+      <h2 class="section-title reveal">Progetti &amp; CTF</h2>
+      <div class="section-line reveal"></div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-name">[CTF 1 / MACCHINA]</span>
+            <span class="project-platform">HackTheBox</span>
+          </div>
+          <div class="project-difficulty difficulty-easy">
+            <i class="fas fa-circle" style="font-size:.55rem"></i> Easy
+          </div>
+          <p class="project-desc">
+            [Descrizione breve della macchina o challenge. Es: "Exploit di una vulnerabilità RCE su servizio FTP con successiva escalation tramite SUID binary."]
+          </p>
+          <div class="project-tags">
+            <span class="ptag">Linux</span>
+            <span class="ptag">FTP</span>
+            <span class="ptag">RCE</span>
+            <span class="ptag">PrivEsc</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-name">[CTF 2 / MACCHINA]</span>
+            <span class="project-platform">TryHackMe</span>
+          </div>
+          <div class="project-difficulty difficulty-medium">
+            <i class="fas fa-circle" style="font-size:.55rem"></i> Medium
+          </div>
+          <p class="project-desc">
+            [Descrizione breve. Es: "Web app con SQL Injection e upload di webshell per ottenere reverse shell. Escalation via sudo misconfiguration."]
+          </p>
+          <div class="project-tags">
+            <span class="ptag">Web</span>
+            <span class="ptag">SQLi</span>
+            <span class="ptag">Webshell</span>
+            <span class="ptag">sudo</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-name">[CTF 3 / MACCHINA]</span>
+            <span class="project-platform">HackTheBox</span>
+          </div>
+          <div class="project-difficulty difficulty-hard">
+            <i class="fas fa-circle" style="font-size:.55rem"></i> Hard
+          </div>
+          <p class="project-desc">
+            [Descrizione breve. Es: "Active Directory attack chain: AS-REP Roasting → Kerberoasting → Pass-the-Hash → DCSync."]
+          </p>
+          <div class="project-tags">
+            <span class="ptag">Windows</span>
+            <span class="ptag">Active Directory</span>
+            <span class="ptag">Kerberos</span>
+            <span class="ptag">BloodHound</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-name">[PROGETTO PERSONALE]</span>
+            <span class="project-platform">GitHub</span>
+          </div>
+          <div class="project-difficulty" style="color:#888">
+            <i class="fas fa-code" style="font-size:.75rem"></i> Tool / Script
+          </div>
+          <p class="project-desc">
+            [Descrizione del progetto. Es: "Script Python per automazione di enumerazione su target Linux in fase di post-exploitation."]
+          </p>
+          <div class="project-tags">
+            <span class="ptag">Python</span>
+            <span class="ptag">Automation</span>
+            <span class="ptag">Enumeration</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-name">[CTF 4 / MACCHINA]</span>
+            <span class="project-platform">TryHackMe</span>
+          </div>
+          <div class="project-difficulty difficulty-insane">
+            <i class="fas fa-circle" style="font-size:.55rem"></i> Insane
+          </div>
+          <p class="project-desc">
+            [Descrizione breve della challenge insane / avanzata.]
+          </p>
+          <div class="project-tags">
+            <span class="ptag">[TAG 1]</span>
+            <span class="ptag">[TAG 2]</span>
+            <span class="ptag">[TAG 3]</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-header">
+            <span class="project-name">[CTF 5 / MACCHINA]</span>
+            <span class="project-platform">PwnedLabs</span>
+          </div>
+          <div class="project-difficulty difficulty-medium">
+            <i class="fas fa-circle" style="font-size:.55rem"></i> Medium
+          </div>
+          <p class="project-desc">
+            [Descrizione breve.]
+          </p>
+          <div class="project-tags">
+            <span class="ptag">[TAG 1]</span>
+            <span class="ptag">[TAG 2]</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact">
+    <div class="container">
+      <p class="section-label reveal">// 05. nc -lvnp contact</p>
+      <h2 class="section-title reveal">Contatti</h2>
+      <div class="section-line reveal"></div>
+      <div class="contact-inner">
+        <p class="contact-desc reveal">
+          Vuoi collaborare, hai una domanda o vuoi semplicemente connetterti?<br>
+          Trovami su queste piattaforme o scrivimi direttamente.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:[LA-TUA-EMAIL]@gmail.com" class="contact-item reveal">
+            <i class="fas fa-envelope"></i>
+            <span>raffaelesbetta@gmail.com</span>
+          </a>
+          <a href="https://linkedin.com/in/[IL-TUO-PROFILO]" target="_blank" rel="noopener" class="contact-item reveal">
+            <i class="fab fa-linkedin"></i>
+            <span>linkedin.com/in/raffaelesbetta</span>
+          </a>
+          <a href="https://github.com/[IL-TUO-PROFILO]" target="_blank" rel="noopener" class="contact-item reveal">
+            <i class="fab fa-github"></i>
+            <span>github.com/[IL-TUO-PROFILO]</span>
+          </a>
+          <a href="https://tryhackme.com/p/[IL-TUO-PROFILO]" target="_blank" rel="noopener" class="contact-item reveal">
+            <i class="fas fa-terminal"></i>
+            <span>tryhackme.com/p/[IL-TUO-PROFILO]</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <span>&copy; 2025</span> Raffaele Sbetta &mdash; Built with <span>&lt;/&gt;</span> &amp; caffeine
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
